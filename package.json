@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "docker:build": "docker build -t mach .",
+    "docker:run": "docker run -dp 3000:3000 mach",
     "test": "jest --coverage",
     "test:e2e": "npx playwright test",
     "test:e2e-report": "npx playwright show-report"
