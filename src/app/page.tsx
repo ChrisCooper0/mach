@@ -17,7 +17,7 @@ export default async function Home() {
     <main className={styles.main}>
       <section className={styles.todosWrapper}>
         <h1>Todos:</h1>
-        {hasTodos ? <Todos rows={rows} /> : <p>Nothing to do!</p>}
+        {hasTodos ? <Todos rows={rows} /> : <p>Nothing to do</p>}
       </section>
     </main>
   );
