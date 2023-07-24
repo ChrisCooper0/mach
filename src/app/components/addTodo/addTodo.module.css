@@ -1,0 +1,21 @@
+.input {
+  padding: 0.3rem;
+  outline: 1px solid whitesmoke;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.submitBtn {
+  margin-left: 5px;
+  padding: 0.3rem;
+  outline: 1px solid whitesmoke;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background-color: whitesmoke;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}

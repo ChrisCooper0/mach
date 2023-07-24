@@ -4,6 +4,7 @@ import userEvent from "@testing-library/user-event";
 import Home from "../page";
 
 describe("Page", () => {
+  // @ts-expect-error
   const run = () => render(<Home />);
   test("renders todos", () => {
     run();

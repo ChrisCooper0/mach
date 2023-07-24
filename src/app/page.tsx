@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import { sql } from "@vercel/postgres";
-import Todos from "./components/todos";
+import Todos from "./components/todoList/todos";
+import AddTodo from "./components/addTodo/addTodo";
 
 export interface Todos {
   id: number;
@@ -17,6 +18,7 @@ export default async function Home() {
     <main className={styles.main}>
       <section className={styles.todosWrapper}>
         <h1>Todos:</h1>
+        {!hasTodos && <AddTodo />}
         {hasTodos ? <Todos rows={rows} /> : <p>Nothing to do</p>}
       </section>
     </main>
